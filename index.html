@@ -14,7 +14,15 @@
 </head>
 <h2>Some Javascrip Thing</h2>
 <script>
-    var key = ["Amprex","Atterax","e","r","t","y","u","i","o","p"];
+    var key = ["Amprex","Atterax","e","r","t","y","u","i","o","p"]; 
+    function load(){    
+        for (var i = 0; i < key[0].length; i++) {
+            var checked = localStorage.getItem(key[i]);
+            if (checked == true) {
+               document.getElementById(key[i]).setAttribute('checked','checked');
+            }
+     }
+     load();
 </script>
 
 <body>
@@ -38,14 +46,6 @@
                 }
             }
         }
-
-        function load(){    
-            for (var i = 0; i < key[0].length; i++) {
-                var checked = localStorage.getItem(key[i]);
-                if (checked == true) {
-                    document.getElementById(key[i]).setAttribute('checked','checked');
-                }
-            }
-        }
+        save();
     </script>
 </html>
