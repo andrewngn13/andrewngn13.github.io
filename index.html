@@ -30,19 +30,22 @@
 
 
     <script>
-        /*var key = [["q","w","e","r","t","y","u","i","o","p"],["a","b","c",]];
         function save(){
-            var checkbox = document.getElementById('checkbox1zaal1');
-            if(document.getElementById('checkbox1zaal1').checked) {
-                localStorage.setItem('checkbox1zaal1', true);
+            for (var i = 0; i < key[0].length; i++) {
+                var checkbox = document.getElementById(key[i]);
+                if(document.getElementById(key[i]).checked) {
+                    localStorage.setItem(key[i], true);
+                }
             }
         }
 
         function load(){    
-            var checked = localStorage.getItem('checkbox1zaal1');
-            if (checked == true) {
-                document.getElementById("checkbox1zaal1").setAttribute('checked','checked');
+            for (var i = 0; i < key[0].length; i++) {
+                var checked = localStorage.getItem(key[i]);
+                if (checked == true) {
+                    document.getElementById(key[i]).setAttribute('checked','checked');
+                }
             }
-        }*/
+        }
     </script>
 </html>
