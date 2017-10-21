@@ -5,46 +5,53 @@
 
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Basic HTML File</title>
 </head>
-  
+
 <h2>My First JavaScript</h2>
-<button type="button"
-onclick="document.getElementById('demo').innerHTML = Date()">
+<button type="button" onclick="document.getElementById('demo').innerHTML = Date()">
 Click me to display Date and Time.</button>
 <script type="text/javascript">
-var key = [["q","w","e","r","t","y","u","i","o","p"],["a","b","c",]];
-for(var i = 0; i < key.length; i++)
-{
-    document.write("<div>");
-    for(var j = 0; j < key[i].length; j++)
-    {
-       document.write("<input type='button' value='" + key[i][j] + "'/>");
-    }
-    document.write("</div>");
-}
+    var key = [
+        ["q", "w", "e", "r", "t", "y", "u", "i", "o", "p"],
+        ["a", "b", "c", ]
+    ];
 </script>
-Amprex: <input type="checkbox" id="amprex">
 
-<p id="demo"></p>
-<script>
-/*var key = [["q","w","e","r","t","y","u","i","o","p"],["a","b","c",]];
-function save(){
-    var checkbox = document.getElementById('checkbox1zaal1');
-    if(document.getElementById('checkbox1zaal1').checked) {
-        localStorage.setItem('checkbox1zaal1', true);
-    }
-}
+<body>
+    <script type="text/javascript">
+        for (var i = 0; i < key.length; i++) {
+            document.write("<div>");
+            for (var j = 0; j < key[i].length; j++) {
+                document.write("<input type='button' value='" + key[i][j] + "'/>");
+            }
+            document.write("</div>");
+        }
+    </script>
+</body>
+    Amprex: <input type="checkbox" id="amprex">
 
-function load(){    
-    var checked = localStorage.getItem('checkbox1zaal1');
-    if (checked == true) {
-        document.getElementById("checkbox1zaal1").setAttribute('checked','checked');
-    }
-}*/
-</script>
+    <p id="demo"></p>
+    <script>
+        /*var key = [["q","w","e","r","t","y","u","i","o","p"],["a","b","c",]];
+        function save(){
+            var checkbox = document.getElementById('checkbox1zaal1');
+            if(document.getElementById('checkbox1zaal1').checked) {
+                localStorage.setItem('checkbox1zaal1', true);
+            }
+        }
+
+        function load(){    
+            var checked = localStorage.getItem('checkbox1zaal1');
+            if (checked == true) {
+                document.getElementById("checkbox1zaal1").setAttribute('checked','checked');
+            }
+        }*/
+    </script>
+
 </html>
