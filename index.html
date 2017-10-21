@@ -16,7 +16,35 @@
 <button type="button"
 onclick="document.getElementById('demo').innerHTML = Date()">
 Click me to display Date and Time.</button>
+<script type="text/javascript">
+var key = [["q","w","e","r","t","y","u","i","o","p"],["a","b","c",]];
+</script>
+for(var i = 0; i < key.length; i++)
+{
+    document.write("<div>");
+    for(var j = 0; j < key[i].length; j++)
+    {
+       document.write("<input type='button' value='" + key[i][j] + "'/>");
+    }
+    document.write("</div>");
+}
+Amprex: <input type="checkbox" id="amprex">
 
 <p id="demo"></p>
-  
+<script>
+/*var key = [["q","w","e","r","t","y","u","i","o","p"],["a","b","c",]];
+function save(){
+    var checkbox = document.getElementById('checkbox1zaal1');
+    if(document.getElementById('checkbox1zaal1').checked) {
+        localStorage.setItem('checkbox1zaal1', true);
+    }
+}
+
+function load(){    
+    var checked = localStorage.getItem('checkbox1zaal1');
+    if (checked == true) {
+        document.getElementById("checkbox1zaal1").setAttribute('checked','checked');
+    }
+}*/
+</script>
 </html>
